@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_浮动脱落标准流</title>
+
+    <style>
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .box2{
+            height: 150px;
+            width: 150px;
+            background-color: #67676d;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--
+  01 什么是浮动元素 的脱标
+   当一个元素浮动后,这个元素看上去就像从标准流中删除一样 这个就是脱标
+
+  02 浮动托表后会有什么影响?
+   如果前面的元素浮动后,而后面的元素没有浮动,那么这个时候前面的元素就会盖住后面一个元素
+-->
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
