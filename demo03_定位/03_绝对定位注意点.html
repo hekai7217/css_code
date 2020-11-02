@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位注意点</title>
+
+    <style>
+
+        .box1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            position: relative;
+            padding: 30px;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+            position: absolute;
+            /*  绝对定位 会 忽略 祖先的 padding值 */
+            top: 0px;
+            left: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box1">
+    <div class="box2"> hello </div>
+</div>
+
+</body>
+</html>

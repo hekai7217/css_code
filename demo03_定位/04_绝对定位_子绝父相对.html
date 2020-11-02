@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子绝对定位父相对定位</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            list-style: none;
+            margin:100px auto;
+
+            background-color: red;
+        }
+
+        ul li{
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            float: left;
+            background-color: #ccc;
+        }
+
+        ul li:nth-of-type(4){
+            background-color: yellow;
+            position: relative;
+        }
+
+        ul li img{
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            margin-left: -12px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<ul>
+    <li>服装城</li>
+    <li>美妆馆</li>
+    <li>京东超市</li>
+    <li>
+        <img src="../images/hot.png">
+        全球购
+    </li>
+    <li>闪购</li>
+    <li>团购</li>
+    <li>拍卖</li>
+    <li>金融</li>
+</ul>
+
+
+
+</body>
+</html>
